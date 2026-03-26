@@ -111,9 +111,15 @@
      hx-swap="innerHTML"
      hx-on::error="this.innerHTML = '<div class=\'col-span-4 text-center text-red-500\'>Failed to load stats. Please try again.</div>'">
      
-  <div class="text-center col-span-4 text-gray-500">
-    Loading stats...
-  </div>
+<!-- Loading -->
+<div class="text-center col-span-4 text-gray-500 dark:text-gray-400">
+  Loading stats...
+</div>
+
+<!-- Empty State -->
+<div id="emptyState" class="hidden col-span-4 text-center text-gray-400">
+  No stats available
+</div>
 
 </div>
           <div class="text-center">
